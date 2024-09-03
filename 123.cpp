@@ -6,7 +6,7 @@
 using namespace std;
 namespace fs = filesystem;
 
-// Function to display the main menu
+
 void displayMenu() {
     cout << "Directory Management System" << endl;
     cout << "----------------------------" << endl;
@@ -17,7 +17,7 @@ void displayMenu() {
     cout << "----------------------------" << endl;
 }
 
-// Function to list files in the current directory
+
 void listFiles() {
     try {
         for (const auto& entry : fs::directory_iterator(fs::current_path())) {
@@ -30,7 +30,6 @@ void listFiles() {
     }
 }
 
-// Function to create a new directory
 void createDirectory() {
     string directoryName;
     cout << "Enter the name of the directory: ";
@@ -46,7 +45,7 @@ void createDirectory() {
     }
 }
 
-// Function to change the current working directory
+
 void changeDirectory() {
     string directoryPath;
     cout << "Enter the path of the directory: ";
